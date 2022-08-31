@@ -10,7 +10,7 @@ function getRepos() {
     if (input.value == "") {
         reposData.innerHTML = `<span>Please enter your github username</span>`
     } else {
-        fetch("https://api.github.com/users/hu-sawan/repos")
+        fetch(`https://api.github.com/users/${input.value}/repos`)
         .then((response) => {
             return response.json();
         })
@@ -37,7 +37,7 @@ function getRepos() {
                 url.appendChild(urlText);
 
                 // add link to a tag
-                url.href = `https://github.com/hu-sawan/${repo.name}`
+                url.href = `https://github.com/${input.value}/${repo.name}`
 
                 // set target attribute
                 url.setAttribute("target", "_blank");

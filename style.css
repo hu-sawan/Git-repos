@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tohoma, Arial;
+}
+.repos-container {
+    width: 800px;
+    background-color: #f6f6f6;
+    margin: auto;
+}
+
+.repos-container .git-repos {
+    padding: 20px;
+    display: flex;
+    background-color: #eee;
+}
+
+.repos-container .git-repos input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    font-size: 18px;
+    height: 50px;
+}
+
+.repos-container .git-repos input:focus {
+    outline: 2px solid #F44336;
+}
+
+.repos-container .git-repos .send-btn {
+    width: 140px;
+    margin-left: 10px;
+    height:  50px;
+    background-color: #F44336;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.repos-container .show-data {
+    padding: 20px;
+    background-color: #e0e0e0;
+}

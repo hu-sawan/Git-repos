@@ -57,7 +57,7 @@ function getRepos() {
                 // add class for main div
                 mainDiv.className = "repo-box";
 
-                reposData.appendChild(Hi);
+                reposData.appendChild(mainDiv);
             })
         });
     }

@@ -37,7 +37,7 @@ function getRepos() {
                 url.appendChild(urlText);
 
                 // add link to a tag
-                url.href = repositories.html_url;
+                url.href = repo.html_url;
 
                 // set target attribute
                 url.setAttribute("target", "_blank");

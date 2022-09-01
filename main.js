@@ -37,7 +37,7 @@ function getRepos() {
                 url.appendChild(urlText);
 
                 // add link to a tag
-                url.href = `https://github.com/${input.value}/${repo.name}`
+                url.href = repositories.html_url;
 
                 // set target attribute
                 url.setAttribute("target", "_blank");
